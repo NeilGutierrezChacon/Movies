@@ -5,6 +5,8 @@ app.get('/', (req, res) => {
     res.json({ message: "Hello world" });
 })
 
+//Routes movies
+app.use(require('./routes/movies'));
 app.use(express.json());
 
 
